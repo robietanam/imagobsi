@@ -1,0 +1,172 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #667eea;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+/* Form container */
+.form {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Headings */
+.form h1 {
+  color: black;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+.form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+/* Submit button */
+.form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background: #764ba2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.form input[type="submit"]:hover {
+  transform: translateY(-1px);
+  background: transparent;
+  border: 1px solid #333;
+  color: #764ba2;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Links */
+.form a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.form a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.form p {
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Dashboard styles */
+.dashboard {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.dashboard h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.dashboard p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.logout-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #e74c3c;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: slideInRight 0.3s ease-out;
+  max-width: 300px;
+}
+
+.toast.success {
+  background: #2ecc71;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
