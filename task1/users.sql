@@ -39,13 +39,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `trn_date`) VALUES
-(1, 'admin', 'admin@example.com', '482c811da5d5b4bc6d497ffa98491e38', '2025-08-27 06:18:31'),
-(2, 'admin', 'admin@example.com', '482c811da5d5b4bc6d497ffa98491e38', '2025-08-27 06:18:47'),
-(3, 'admin', 'admin@gmail.com', '25d55ad283aa400af464c76d713c07ad', '2025-08-27 06:20:16'),
-(4, 'admin2', 'SADMIN@GMAIL.COM', '25d55ad283aa400af464c76d713c07ad', '2025-08-27 06:38:44'),
-(5, 'ras', 'ras@gmail.cm', '25d55ad283aa400af464c76d713c07ad', '2025-08-27 06:40:53');
-
 --
 -- Indexes for dumped tables
 --
